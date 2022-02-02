@@ -13,7 +13,6 @@ body {
 .header-google {
     width: 100%;
     height: 10vh;
-    /* background-color: rgb(204, 195, 195); */
     display: flex;
     justify-content: end;
 }
@@ -24,6 +23,14 @@ body {
     align-items: center;
     justify-content: space-around;
 }
+.navbar__text {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+.navbar__text:hover {
+    border-bottom: 1px solid black;
+}
 .navbar__figure {
     width: 40px;
     height: 40px;
@@ -31,6 +38,9 @@ body {
 .navbar__figure--herramientas {
     width: 20px;
     height: 20px;
+}
+.navbar__figure--herramientas img{
+    width: 100%;
 }
 .navbar__figure--perfil {
     border-radius: 50%;
@@ -40,15 +50,126 @@ body {
     width: 100%;
 }
 
-.herramientas {
+.main-google {
     width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 2px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
 }
-.herramientas__items {
-    /* border-radius: 50%; */
-    background-color: black;
+.main-google__container {
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-google__title {
+    display: flex;
+    font-size: 10rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.letter1 {
+    color: blue;
+}
+.letter2 {
+    color: red;
+}
+.letter3 {
+    color: yellow;
+}
+.letter4 {
+    color: blue;
+}
+.letter5 {
+    color: green;
+}
+.letter6 {
+    color: red;
+}
+.main-google__label {
+    width: 600px;
+    height: 44px;
+    border-radius: 24px;
+    border: .5px solid grey;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-google__buscar {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+}
+.main-google__buscar img {
+    width: 100%;
+}
+.main-google__microphone {
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+}
+.main-google__microphone img {
+    width: 100%;
+}
+.main-google_barra {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.main-google_barra input {
+    width: 500px;
+    height: 30px;
+    font-size: 1.6rem;
+    border: none;
+}
+.main-google__button {
+    width: 330px;
+    height: 36px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-google__button button:hover {
+    border: 1px solid black;
+}
+.main-google__button button {
+    width: 150px;
+    height: 100%;
+    font-size: 1.4rem;
+    background-color: #e9e9e9;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-google {
+    width: 100%;
+    height: 10vh;
+    padding: 20px;
+    background-color: #e9e9e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-google__list {
+    display: flex;
+    list-style: none;
+}
+.footer-google__list li {
+    margin: 0 10px;
+}
+.footer-google__list a {
+    color: black;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+.footer-google__list a:hover {
+    border-bottom: 1px solid black;
 }
